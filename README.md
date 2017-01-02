@@ -2,22 +2,19 @@
 
 ## Introduction
 
-dabtools is work-in-progress set of tools for reception, recording and
-playback of DAB and DAB+ digital radio broadcasts. It currently
-supports the Psion Wavefinder USB DAB tuner and any SDR tuner
-supported by the RTL-SDR project.
+This is a fork of basicmaster/dabtools for use on Mac OS X. The aim is to provide a complete working DAB/DAB+ receiver solution for both command line and GUI. The complete suite would consist off:
 
-It is heavily based on David Crawley's "OpenDAB" software for the
-Psion Wavefinder and David May's "rtl-dab" SDR DAB demodulator, and
-wouldn't have been possible without their work (and other contributors
-to those projects).
+rtl-sdr (USB device interface and tools)
 
-The included Psion Wavefinder kernel driver is an extended version of
-David Crawley's original driver, with some functionality David
-implemented in his userland application moved inside the kernel driver
-in order to provide a higher-level API and simplify the application
-code.
+dabtools (for dab2eti)
 
+dablin (tuner)
+
+mpg123/sox or similar to play the audio stream
+
+dabtools is work-in-progress set of tools for reception, recording and playback of DAB and DAB+ digital radio broadcasts. It currently supports any SDR tuner supported by the RTL-SDR project.
+
+It is heavily based on David May's "rtl-dab" SDR DAB demodulator, and wouldn't have been possible without their work (and other contributors to those projects).
 
 dabtools currently consists of the following tools:
 
@@ -25,11 +22,9 @@ dab2eti - receive a DAB ensemble and output an ETI stream to STDOUT
 
 eti2mpa - extract an MPEG audio stream from an ETI stream.
 
-ETI is the standard file format for the storage and transport of a DAB
-ensemble.  It is defined in ETSI 300 799.
+ETI is the standard file format for the storage and transport of a DAB ensemble. It is defined in ETSI 300 799.
 
-It consists of a set of fixed-size (6144 byte) frames, each containing
-24ms of audio and other data.
+It consists of a set of fixed-size (6144 byte) frames, each containing 24ms of audio and other data.
 
 ## Hardware support
 
