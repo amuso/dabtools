@@ -6,10 +6,10 @@
 
 This is a fork of basicmaster/dabtools for use on Mac OS X. The aim is to provide a complete working DAB/DAB+ receiver solution for both command line and GUI. The complete suite would consist off:
 
-- rtl-sdr (USB device interface and tools)
-- dabtools (for dab2eti)
- -dablin (tuner)
-- mpg123/sox or similar to play the audio stream
+- rtl-sdr (USB device interface and receiver)
+- dabtools (for dab2eti DAB ensemble decoder)
+- dablin (actual tuner to select an ensemble channel)
+- mpg123/sox or similar to play the received audio stream (MP2 or MP4)
 
 dabtools is work-in-progress set of tools for reception, recording and playback of DAB and DAB+ digital radio broadcasts. It currently supports any SDR tuner supported by the RTL-SDR project.
 
